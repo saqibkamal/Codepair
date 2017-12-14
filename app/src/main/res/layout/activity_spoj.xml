@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kamal.saqib.codepair.Spoj">
+
+    <EditText
+        android:id="@+id/user1"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter your username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/user2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter other username"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/user1"
+        android:layout_alignLeft="@+id/user1"
+        android:layout_alignStart="@+id/user1" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/exchange"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/user2"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="370dp"
+        android:src="@drawable/swap"/>
+
+    <Button
+        android:id="@+id/compare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="compare"
+        android:layout_below="@+id/user2"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/compare"
+        android:layout_marginTop="24dp" />
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="180dp"/>
+
+</RelativeLayout>
